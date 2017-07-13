@@ -1,0 +1,489 @@
+body{
+    margin: 0;
+    text-align: center;
+   font-family: 'Bellefair', serif;
+    overflow-x: hidden;
+    width: 100vw;
+}
+video{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    
+    
+    transition: 1s opacity;
+}
+.mainTitle{
+    color:  #D0AF51;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 50px;
+    margin: 0;
+   text-shadow: 0 3px 3px black;
+    margin-bottom: 10px;
+}
+div.mainContainer{
+/*    background: rgba(0,0,0,0.4);*/
+    
+    height: auto;
+    background-size: cover;
+    color: white;
+    padding: 30px;
+}
+#dayDescription{
+    color: #666600;
+}
+#theCity{
+    height: 40px;
+    border-radius: 5px 0px 0px 5px;
+    background: rgba(255,255,255,0.6);
+    border: 1px solid rgba(255,255,255,0.8);
+   width: 30%;
+    font-size: 1.3em;
+    top:3px;
+    position: relative;
+    font-family: 'Bellefair', serif;
+}
+#myButton{
+    height: 40px;
+    border-radius: 0px 5px 5px 0px;
+    background: #009933;
+    border: 1px solid white;
+    position: relative;
+    left: -5px;
+    top: 1px;
+    width: 50px;
+    font-family: 'Bellefair', serif;
+}
+.fa-search{
+    color: white;
+}
+.todayImg{
+    display: inline-block;
+    position: relative;
+    float: left;
+    left: 0;
+    background-image: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.7));
+    padding: 20px;
+    border-radius: 5px 0px 0px 5px;
+/*    border: 1px solid #000066;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    color: black;
+    height: 230px;
+    width: 46%;
+    font-size: 1.3em;
+    
+}
+.todayInfo{
+    background-image: none;
+    display: inline-block;
+    position: relative;
+    float: left;
+    left: 0;
+    background: linear-gradient(rgba(0, 37, 51,0.9),rgba(0, 19, 26,0.5));
+    padding: 20px;
+    border-radius: 0px 5px 5px 0px;
+    
+    /*border: 1px solid #000066;*/
+    color: rgba(255,255,255,0.9);
+    height: 230px;
+    text-align: left;
+    box-shadow: inset 5px 0px 5px rgba(0,0,0,0.3);
+    font-size: 1.3em;
+    width: 35%;
+    padding-left: 20px;
+}
+#highToday{
+    font-size: 35px;
+}
+#lowToday{
+    top:-7px;
+    position: relative;
+    font-size: 24px;
+}
+.todayContainer{
+    clear: both;
+    margin-bottom: 360px;
+    margin-top: 50px;
+    position: relative;
+    left: 7vw;
+    
+}
+#main{
+    font-size: 30px;
+    color: #D0AF51;
+    margin-left: 30px;
+}
+#speed{
+  margin-left: 30px; 
+}
+#humidity{
+  margin-left: 30px; 
+}
+#pressure{
+  margin-left: 30px; 
+}
+#clouds{
+  margin-left: 30px; 
+}
+#imageToday{
+    height: 100px;
+}
+.image{
+    height: 100px;
+}
+#todayDate{
+    color: #003366;
+    font-size: 35px;
+}
+.row{
+    display: inline-block;
+    float: left;
+    margin: 3%;
+    padding: 20px;
+    position: relative;
+    left: 0;
+    background-image: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.8));
+    color: black;
+    width: 23.4%;
+    height: 320px;
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    margin-top: 1.5%;
+}
+#forecastContainer{
+    
+    padding: 0;
+   
+    position: relative;
+    padding: 10px;
+    margin-left: 4%;
+    
+}
+.forecast{
+    width: 90%;
+    left: 5%;
+    position: relative;
+}
+.forecastButton{
+    height: 50px;
+    width: 32%;
+    border-radius: 5px 0px 0px 5px;
+    background: linear-gradient(rgba(0, 37, 51,0.9),rgba(0, 19, 26,0.5));
+    border: 1px solid rgba(255,255,255,0.8);
+    color: rgba(255,255,255,1);
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    position: relative;
+    left: 10px;
+    font-family: 'Bellefair', serif;
+}
+#tenDays{
+    position: relative;
+    left:5px;
+    border-radius: 0px;
+}
+#sixteenDays{
+    left: 0px;
+    position: relative;
+    border-radius: 0px 5px 5px 0px;
+}
+.c1{
+    display: block;
+    font-size: 25px;
+    color: #003366;
+}
+.c2{
+    display: block;
+    position: relative;
+    left: 8vw;
+    height: 80px;
+}
+.c3{
+   font-size: 1.3em; 
+}
+.c4{
+    position: relative;
+    top: -3px;
+}
+.c5{
+    display: block;
+    font-size: 1.3em;
+    color: #666600;
+}
+.c6{
+    display: block;
+}
+.c7{
+    display: block;
+}
+.c8{
+    display: block;
+}
+.c9{
+    display: block;
+}
+@media screen and (max-width: 1280px){
+    .todayInfo{
+        width: 33.5%;
+    }
+    .row{
+        
+        width: 22.8%
+    }
+}
+@media screen and (max-width: 1156px){
+    .todayInfo{
+        width: 32%;
+    }
+    .row{
+        margin: 0;
+        margin: 3%;
+        width: 38%
+    }
+    .c2{
+        left: 13vw;
+    }
+}
+@media screen and (max-width: 991px){
+    .row{
+        margin: 0;
+        margin: 3%;
+        width: 34.6%
+    }
+     
+    .todayInfo{
+        width: 30%;
+    }
+    #forecastContainer{
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+        left: 40px;
+        position: relative;
+    }
+}
+@media screen and (max-width: 767px){
+    
+    .todayImg{
+        left: 0;
+        width: 43%;
+        height: 265px
+    }
+    .todayInfo{
+        left: 0;
+        width: 30%;
+        height: 265px
+        
+    }
+    .todayContainer{
+        position: relative;
+        left: 7.5%;
+        margin-bottom: 400px;
+    }
+    
+    
+    .row{
+        margin: 0;
+        margin: 5%;
+        width: 31.5%
+    }
+    #forecastContainer{
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+        left: 15px;
+        position: relative;
+    }
+}
+@media screen and (max-width: 631px){
+    #theCity{
+        width: 80%;
+        left: 1vw;
+        position: relative;
+    }
+    #myButton{
+        position: relative;
+        left: 0;
+    }
+    
+    .todayContainer{
+        left: 9vw;
+        position: relative;
+         margin-bottom: 730px;
+        
+    }
+   .todayImg{
+/*
+        clear: both;
+        display: block;
+        float: none;
+*/
+        left: 0;
+        height: 280px;
+        border-radius: 5px 5px 0px 0px;
+        width: 70%;
+    }
+    .todayInfo{
+/*
+        clear: both;
+        display: block;
+        float: none;
+*/
+        left: 0;
+        border-radius: 0px 0px 5px 5px;
+        box-shadow: inset 0px 5px 5px rgba(0,0,0,0.3);
+        width: 70%;
+    }
+   #tenDays{
+        left: 2px;
+        border-radius: 5px;
+    }
+    #sixteenDays{
+        left: 2px;
+        border-radius: 5px;
+    }
+    .forecastButton{
+        left: 2px;
+        width: 89%;
+        border-radius: 5px;
+    }
+    .c2{
+        left: 25vw
+    }
+     
+    #forecastContainer{
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        left: 7vw;
+    
+    }
+    .row{
+        width: 69%;
+    }
+    
+}
+@media screen and (max-width: 480px){
+    div.mainContainer{
+        padding: 10px;
+    }
+    #theCity{
+        width: 200px;
+    }
+    .todayImg{
+        /*clear: both;
+        display: block;
+        float: none;*/
+        left: 0;
+        height: 280px;
+        border-radius: 5px 5px 0px 0px;
+        width: 70%;
+    }
+    .todayInfo{
+        /*clear: both;
+        display: block;
+        float: none;*/
+        left: 0;
+        border-radius: 0px 0px 5px 5px;
+        box-shadow: inset 0px 5px 5px rgba(0,0,0,0.3);
+        width: 70%;
+    }
+    .todayContainer{
+        margin-bottom: 730px;
+        position: relative;
+        left: 10vw;
+    }
+    #tenDays{
+        left: 3px;
+        border-radius: 5px;
+    }
+    #sixteenDays{
+        left: 3px;
+        border-radius: 5px;
+    }
+    .forecastButton{
+        left: 3px;
+        width: 88%;
+        border-radius: 5px;
+    }
+    #forecastContainer{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    
+    }
+    .row{
+        margin: 4%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+        width: 74%;
+    }
+    .c2{
+        left: 29vw;
+    }
+}
+@media screen  and (max-width: 320px){
+    div.mainContainer{
+        padding: 10px;
+    }
+    #theCity{
+        width: 200px;
+    }
+    .todayImg{
+        clear: both;
+        display: block;
+        float: none;
+        left: 0;
+        height: 280px;
+        border-radius: 5px 5px 0px 0px;
+    }
+    .todayInfo{
+        clear: both;
+        display: block;
+        float: none;
+        left: 0;
+        border-radius: 0px 0px 5px 5px;
+        box-shadow: inset 0px 5px 5px rgba(0,0,0,0.3);
+    }
+    .todayContainer{
+        margin-bottom: 740px;
+        left: 7vw;
+    }
+    #tenDays{
+        left: 1px;
+        border-radius: 5px;
+    }
+    #sixteenDays{
+        left: 1px;
+        border-radius: 5px;
+    }
+    .forecastButton{
+        left: 1px;
+        width: 94%;
+        border-radius: 5px;
+    }
+    #forecastContainer{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    
+    }
+    .row{
+        
+        padding: 10px;
+        margin-top: 10px;
+        margin: 4%;
+        width: 75%;
+    }
+    .c2{
+        left: 23vw;
+    }
+}

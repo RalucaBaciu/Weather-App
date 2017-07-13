@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather App</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="mySyle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+</head>
+
+<body>
+
+    <video poster="Sky%20-%208014.mp4" playsinline autoplay muted loop>
+    <source src="Sky%20-%208014.mp4" type="video/mp4">
+    </video>
+    <div class="mainContainer">
+        <h2 class="mainTitle">Weather App</h2>
+    <div class="today" id="today">
+        <div><input id="theCity" type="search" placeholder="Please enter a city"> <button id="myButton"><i class="fa  fa-search" aria-hidden="true"></i></button></div>
+        <div class="todayContainer">
+        <div class="todayImg">
+            <div id="todayDate"></div>
+            <div class="image"><img id="imageToday" class="weatherImg"></div>
+            <div class="temperatures">
+                <span id="highToday"></span><span id="lowToday"></span>
+            </div><br>
+            <div id="dayDescription"></div>
+        </div>
+        <div class="todayInfo">
+            <br><div id="main"></div><br>
+            <div id="speed"><strong>Wind speed: </strong></div>
+            <div id="humidity"><strong>Humidity:</strong> </div>
+            <div id="pressure"><strong>Pressure: </strong></div>
+            <div id="clouds"><strong>Cloud cover: </strong></div>
+           
+        </div>
+        </div>
+    </div>
+    
+    <div class="forecast" id="forecast">
+        <button type="button" id="fiveDays" class="forecastButton" onclick="getForecastFive(5)">5 Days</button>
+        <button type="button" id="tenDays" class="forecastButton" onclick="getForecastFive(10)">10 Days</button>
+        <button type="button" id="sixteenDays" class="forecastButton" onclick="getForecastFive(15)">15 Days</button>
+        
+    </div>
+        <div id="forecastContainer"></div>
+    <script src="myScript.js"></script>
+        </div>
+</body>
+</html>
